@@ -994,3 +994,90 @@ h2 {
 }
 
 }
+/* ================================
+17. SCROLL REVEAL
+================================ */
+
+.reveal {
+opacity: 0;
+transform: translateY(30px);
+transition:
+opacity 0.8s ease,
+transform 0.8s ease;
+}
+
+.revealed {
+opacity: 1;
+transform: translateY(0);
+}
+
+/* ================================
+18. STAGGER MENU ANIMATION
+================================ */
+
+.menu-card:nth-child(2) {
+transition-delay: 0.1s;
+}
+
+.menu-card:nth-child(3) {
+transition-delay: 0.2s;
+}
+
+.menu-card:nth-child(4) {
+transition-delay: 0.3s;
+}
+
+/* ================================
+19. GALLERY ANIMATION
+================================ */
+
+.gallery-grid img:nth-child(2) {
+transition-delay: 0.1s;
+}
+
+.gallery-grid img:nth-child(3) {
+transition-delay: 0.2s;
+}
+
+.gallery-grid img:nth-child(4) {
+transition-delay: 0.3s;
+}
+
+/* ================================
+20. SCROLLED HEADER
+================================ */
+
+.header {
+transition:
+background 0.3s ease,
+backdrop-filter 0.3s ease;
+}
+
+.header.scrolled {
+position: fixed;
+background: rgba(17, 16, 14, 0.88);
+backdrop-filter: blur(14px);
+border-bottom: 1px solid var(–border);
+}
+
+.header.scrolled .nav {
+min-height: 75px;
+}
+
+/* ================================
+21. REDUCED MOTION
+================================ */
+
+@media (prefers-reduced-motion: reduce) {
+
+html {
+    scroll-behavior: auto;
+}
+*,
+*::before,
+*::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+}
+
+}
