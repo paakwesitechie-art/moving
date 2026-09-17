@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ember — a modern fine-dining restaurant where exceptional food meets unforgettable atmosphere.">
+<title>Ember | Modern Fine Dining</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- HEADER -->
+<header class="header">
+    <nav class="nav container">
+        <a href="#" class="logo">EMBER</a>
+        <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-menu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+            <a href="#reservation" class="nav-button">Reserve a Table</a>
+        </div>
+    </nav>
+</header>
+<main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <p class="eyebrow">MODERN FINE DINING</p>
+            <h1>Where Every<br>Moment <em>Matters.</em></h1>
+            <p class="hero-text">
+                Thoughtfully crafted dishes, refined flavors,
+                and an atmosphere designed to make every evening memorable.
+            </p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
+                <a href="#reservation" class="btn btn-outline">Reserve a Table</a>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down" aria-label="Scroll to about section">
+            <span>Scroll to explore</span>
+            <span class="scroll-line"></span>
+        </a>
+    </section>
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+        <div class="container about-grid">
+            <div class="about-images">
+                <img src="images/dish-1.jpg" alt="Beautifully plated signature dish" class="about-image-main">
+                <img src="images/dish-2.jpg" alt="Elegant restaurant dish" class="about-image-small">
+            </div>
+            <div class="about-content">
+                <p class="eyebrow">OUR STORY</p>
+                <h2>A Table Made<br>For <em>Memories.</em></h2>
+                <p>
+                    Ember was created around a simple idea: exceptional food
+                    should be more than a meal. It should be an experience.
+                </p>
+                <p>
+                    Our kitchen combines seasonal ingredients, modern
+                    techniques, and timeless flavors to create dishes that
+                    are both familiar and unexpected.
+                </p>
+                <a href="#menu" class="text-link">Discover Our Story <span>→</span></a>
+            </div>
+        </div>
+    </section>
+    <!-- MENU -->
+    <section class="menu section" id="menu">
+        <div class="container">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">THE MENU</p>
+                    <h2>Signature <em>Flavors.</em></h2>
+                </div>
+                <p>
+                    A carefully curated selection inspired by
+                    seasonal ingredients and modern cuisine.
+                </p>
+            </div>
+            <div class="menu-filters" role="group" aria-label="Menu categories">
+                <button class="filter-btn active" data-category="all">
+                    All
+                </button>
+                <button class="filter-btn" data-category="starters">
+                    Starters
+                </button>
+                <button class="filter-btn" data-category="mains">
+                    Mains
+                </button>
+                <button class="filter-btn" data-category="desserts">
+                    Desserts
+                </button>
+            </div>
+            <div class="menu-grid">
+                <article class="menu-card" data-category="starters">
+                    <div class="menu-image">
+                        <img src="images/dish-1.jpg" alt="Ember signature starter">
+                        <span class="menu-number">01</span>
+                    </div>
+                    <div class="menu-info">
+                        <div>
+                            <h3>Ember Tartare</h3>
+                            <p>Seasonal vegetables, citrus, herbs</p>
+                        </div>
+                        <span class="price">$18</span>
+                    </div>
+                </article>
+                <article class="menu-card" data-category="mains">
+                    <div class="menu-image">
+                        <img src="images/dish-2.jpg" alt="Grilled premium main course">
+                        <span class="menu-number">02</span>
+                    </div>
+                    <div class="menu-info">
+                        <div>
+                            <h3>Fire-Grilled Tenderloin</h3>
+                            <p>Charred vegetables, herb jus</p>
+                        </div>
+                        <span class="price">$42</span>
+                    </div>
+                </article>
+                <article class="menu-card" data-category="mains">
+                    <div class="menu-image">
+                        <img src="images/dish-3.jpg" alt="Elegant seafood main course">
+                        <span class="menu-number">03</span>
+                    </div>
+                    <div class="menu-info">
+                        <div>
+                            <h3>Ember Sea Bass</h3>
+                            <p>Roasted vegetables, lemon butter</p>
+                        </div>
+                        <span class="price">$36</span>
+                    </div>
+                </article>
+                <article class="menu-card" data-category="desserts">
+                    <div class="menu-image">
+                        <img src="images/dish-1.jpg" alt="Elegant chocolate dessert">
+                        <span class="menu-number">04</span>
+                    </div>
+                    <div class="menu-info">
+                        <div>
+                            <h3>Dark Chocolate</h3>
+                            <p>72% chocolate, vanilla, sea salt</p>
+                        </div>
+                        <span class="price">$14</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- CHEF -->
+    <section class="chef section">
+        <div class="container chef-grid">
+            <div class="chef-content">
+                <p class="eyebrow">THE CHEF</p>
+                <h2>Passion On<br>Every <em>Plate.</em></h2>
+                <p>
+                    Behind every Ember dish is a commitment to craftsmanship,
+                    creativity, and respect for the ingredients.
+                </p>
+                <p>
+                    Our culinary team believes that the best food doesn't
+                    need to be complicated — it needs to be thoughtful.
+                </p>
+                <div class="chef-signature">
+                    <strong>Alexander Reed</strong>
+                    <span>Executive Chef</span>
+                </div>
+            </div>
+            <div class="chef-image">
+                <img src="images/chef.jpg" alt="Ember executive chef in the kitchen">
+            </div>
+        </div>
+    </section>
+    <!-- GALLERY -->
+    <section class="gallery section" id="gallery">
+        <div class="container">
+            <div class="section-heading centered">
+                <p class="eyebrow">THE EXPERIENCE</p>
+                <h2>Inside <em>Ember.</em></h2>
+                <p>
+                    A space designed for unforgettable evenings.
+                </p>
+            </div>
+            <div class="gallery-grid">
+                <img src="images/gallery-1.jpg" alt="Ember restaurant interior">
+                <img src="images/gallery-2.jpg" alt="Fine dining table setting">
+                <img src="images/gallery-3.jpg" alt="Restaurant atmosphere">
+                <img src="images/gallery-4.jpg" alt="Elegant restaurant dining area">
+            </div>
+        </div>
+    </section>
+    <!-- TESTIMONIAL -->
+    <section class="testimonial section">
+        <div class="container testimonial-content">
+            <p class="eyebrow">GUEST EXPERIENCE</p>
+            <blockquote>
+                “An unforgettable evening from the first course
+                to the last. Every detail felt intentional.”
+            </blockquote>
+            <p class="guest-name">— Sophia Williams</p>
+        </div>
+    </section>
+    <!-- RESERVATION -->
+    <section class="reservation section" id="reservation">
+        <div class="container reservation-grid">
+            <div class="reservation-content">
+                <p class="eyebrow">RESERVATIONS</p>
+                <h2>Your Table<br>Awaits.</h2>
+                <p>
+                    Join us for an evening of exceptional food,
+                    thoughtful service, and unforgettable moments.
+                </p>
+                <div class="opening-hours">
+                    <h3>Opening Hours</h3>
+                    <p>Tuesday — Thursday <span>5:00 PM — 10:00 PM</span></p>
+                    <p>Friday — Saturday <span>5:00 PM — 11:30 PM</span></p>
+                    <p>Sunday <span>4:00 PM — 9:00 PM</span></p>
+                </div>
+            </div>
+            <form class="reservation-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Guests</label>
+                        <select id="guests" name="guests" required>
+                            <option value="">Select</option>
+                            <option value="1">1 Guest</option>
+                            <option value="2">2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4">4 Guests</option>
+                            <option value="5">5 Guests</option>
+                            <option value="6">6+ Guests</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Special Request</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="4"
+                        placeholder="Tell us anything we should know..."
+                    ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    Request Reservation
+                </button>
+                <p class="form-message" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+        <div class="container contact-content">
+            <p class="eyebrow">FIND US</p>
+            <h2>Come <em>Experience</em> Ember.</h2>
+            <div class="contact-details">
+                <div>
+                    <span>LOCATION</span>
+                    <p>24 Oak Avenue, Accra</p>
+                </div>
+                <div>
+                    <span>PHONE</span>
+                    <p>+233 20 000 0000</p>
+                </div>
+                <div>
+                    <span>EMAIL</span>
+                    <p>hello@emberrestaurant.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container footer-content">
+        <a href="#" class="logo">EMBER</a>
+        <p>© 2026 Ember Restaurant. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="Facebook">Facebook</a>
+        </div>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
