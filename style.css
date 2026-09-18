@@ -9,14 +9,14 @@ Premium Responsive Styles
     ================================ */
 
 :root {
-–bg: #11100e;
-–bg-soft: #181613;
-–surface: #211e19;
-–cream: #f4eee4;
-–muted: #aaa39a;
-–gold: #c9a96e;
-–gold-light: #e0c58f;
-–border: rgba(244, 238, 228, 0.12);
+–-bg: #11100e;
+–-bg-soft: #181613;
+–-surface: #211e19;
+–-cream: #f4eee4;
+–-muted: #aaa39a;
+–-gold: #c9a96e;
+–-gold-light: #e0c58f;
+–-border: rgba(244, 238, 228, 0.12);
 
 --heading-font: "Cormorant Garamond", serif;
 --body-font: "Inter", sans-serif;
@@ -36,9 +36,9 @@ scroll-behavior: smooth;
 }
 
 body {
-background: var(–bg);
-color: var(–cream);
-font-family: var(–body-font);
+background: var(–-bg);
+color: var(–-cream);
+font-family: var(–-body-font);
 line-height: 1.6;
 overflow-x: hidden;
 }
@@ -71,7 +71,7 @@ margin-inline: auto;
 }
 
 .section {
-padding: var(–section-padding) 0;
+padding: var(–-section-padding) 0;
 }
 
 /* ================================
@@ -81,7 +81,7 @@ padding: var(–section-padding) 0;
 h1,
 h2,
 h3 {
-font-family: var(–heading-font);
+font-family: var(–-heading-font);
 font-weight: 500;
 line-height: 1;
 }
@@ -99,12 +99,12 @@ font-size: 1.7rem;
 }
 
 em {
-color: var(–gold);
+color: var(–-gold);
 font-style: italic;
 }
 
 .eyebrow {
-color: var(–gold);
+color: var(–-gold);
 font-size: 0.72rem;
 font-weight: 600;
 letter-spacing: 0.28em;
@@ -151,18 +151,18 @@ transition: color 0.3s ease;
 }
 
 .nav-menu > a:not(.nav-button)::after {
-content: “”;
+content: "";
 position: absolute;
 left: 0;
 bottom: -8px;
 width: 0;
 height: 1px;
-background: var(–gold);
+background: var(–-gold);
 transition: width 0.3s ease;
 }
 
 .nav-menu > a:not(.nav-button):hover {
-color: var(–cream);
+color: var(–-cream);
 }
 
 .nav-menu > a:not(.nav-button):hover::after {
@@ -170,17 +170,17 @@ width: 100%;
 }
 
 .nav-button {
-border: 1px solid var(–gold);
+border: 1px solid var(–-gold);
 padding: 12px 19px;
-color: var(–gold);
+color: var(–-gold);
 font-size: 0.72rem;
 letter-spacing: 0.1em;
 transition: all 0.3s ease;
 }
 
 .nav-button:hover {
-background: var(–gold);
-color: var(–bg);
+background: var(–-gold);
+color: var(–-bg);
 }
 
 .menu-toggle {
@@ -188,7 +188,7 @@ display: none;
 width: 42px;
 height: 42px;
 background: transparent;
-border: 1px solid var(–border);
+border: 1px solid var(–-border);
 padding: 10px;
 }
 
@@ -196,7 +196,7 @@ padding: 10px;
 display: block;
 width: 100%;
 height: 1px;
-background: var(–cream);
+background: var(–-cream);
 margin: 5px 0;
 transition: transform 0.3s ease;
 }
@@ -244,7 +244,7 @@ margin-bottom: 30px;
 
 .hero-text {
 max-width: 510px;
-color: var(–muted);
+color: var(–-muted);
 font-size: 1rem;
 line-height: 1.9;
 margin-bottom: 38px;
@@ -262,7 +262,7 @@ align-items: center;
 justify-content: center;
 min-height: 52px;
 padding: 0 25px;
-border: 1px solid var(–gold);
+border: 1px solid var(–-gold);
 font-size: 0.72rem;
 font-weight: 600;
 letter-spacing: 0.12em;
@@ -271,23 +271,23 @@ transition: all 0.3s ease;
 }
 
 .btn-primary {
-background: var(–gold);
-color: var(–bg);
+background: var(–-gold);
+color: var(–-bg);
 }
 
 .btn-primary:hover {
-background: var(–gold-light);
-border-color: var(–gold-light);
+background: var(–-gold-light);
+border-color: var(–-gold-light);
 transform: translateY(-3px);
 }
 
 .btn-outline {
-color: var(–cream);
+color: var(–-cream);
 }
 
 .btn-outline:hover {
-background: var(–cream);
-color: var(–bg);
+background: var(–-cream);
+color: var(–-bg);
 transform: translateY(-3px);
 }
 
@@ -312,7 +312,7 @@ transform-origin: right center;
 .scroll-line {
 width: 55px;
 height: 1px;
-background: var(–gold);
+background: var(–-gold);
 }
 
 /* ================================
@@ -320,7 +320,7 @@ background: var(–gold);
 ================================ */
 
 .about {
-background: var(–bg);
+background: var(–-bg);
 }
 
 .about-grid {
@@ -352,7 +352,7 @@ border: 8px solid var(--bg);
 }
 
 .about-content > p:not(.eyebrow) {
-color: var(–muted);
+color: var(–-muted);
 max-width: 520px;
 margin-top: 25px;
 }
@@ -383,7 +383,7 @@ transform: translateX(6px);
 ================================ */
 
 .menu {
-background: var(–bg-soft);
+background: var(–-bg-soft);
 }
 
 .section-heading {
@@ -396,7 +396,7 @@ margin-bottom: 60px;
 
 .section-heading > p {
 max-width: 380px;
-color: var(–muted);
+color: var(–-muted);
 }
 
 .menu-filters {
@@ -408,8 +408,8 @@ margin-bottom: 40px;
 
 .filter-btn {
 background: transparent;
-border: 1px solid var(–border);
-color: var(–muted);
+border: 1px solid var(–-border);
+color: var(–-muted);
 padding: 10px 20px;
 font-size: 0.7rem;
 letter-spacing: 0.1em;
@@ -419,9 +419,9 @@ transition: all 0.3s ease;
 
 .filter-btn:hover,
 .filter-btn.active {
-background: var(–gold);
-border-color: var(–gold);
-color: var(–bg);
+background: var(–-gold);
+border-color: var(–-gold);
+color: var(–-bg);
 }
 
 .menu-grid {
@@ -435,7 +435,7 @@ transition: transform 0.4s ease;
 }
 
 .menu-card:hover {
-transform: translateY(-6px);
+transform: translateY(--6px);
 }
 
 .menu-image {
@@ -474,19 +474,19 @@ display: flex;
 justify-content: space-between;
 gap: 20px;
 padding-top: 22px;
-border-bottom: 1px solid var(–border);
+border-bottom: 1px solid var(–-border);
 padding-bottom: 22px;
 }
 
 .menu-info p {
-color: var(–muted);
+color: var(–-muted);
 font-size: 0.78rem;
 margin-top: 6px;
 }
 
 .price {
-color: var(–gold);
-font-family: var(–heading-font);
+color: var(–-gold);
+font-family: var(–-heading-font);
 font-size: 1.5rem;
 }
 
@@ -495,7 +495,7 @@ font-size: 1.5rem;
 ================================ */
 
 .chef {
-background: var(–bg);
+background: var(–-bg);
 }
 
 .chef-grid {
@@ -506,7 +506,7 @@ gap: 100px;
 }
 
 .chef-content > p:not(.eyebrow) {
-color: var(–muted);
+color: var(–-muted);
 max-width: 480px;
 margin-top: 25px;
 }
@@ -527,13 +527,13 @@ margin-top: 40px;
 }
 
 .chef-signature strong {
-font-family: var(–heading-font);
+font-family: var(–-heading-font);
 font-size: 1.5rem;
 font-weight: 500;
 }
 
 .chef-signature span {
-color: var(–gold);
+color: var(–-gold);
 font-size: 0.7rem;
 letter-spacing: 0.12em;
 text-transform: uppercase;
@@ -545,7 +545,7 @@ margin-top: 5px;
 ================================ */
 
 .gallery {
-background: var(–bg-soft);
+background: var(–-bg-soft);
 }
 
 .centered {
@@ -608,14 +608,14 @@ max-width: 850px;
 }
 
 .testimonial blockquote {
-font-family: var(–heading-font);
+font-family: var(–-heading-font);
 font-size: clamp(2.4rem, 5vw, 4.5rem);
 line-height: 1.1;
 font-style: italic;
 }
 
 .guest-name {
-color: var(–gold);
+color: var(–-gold);
 margin-top: 30px;
 font-size: 0.72rem;
 letter-spacing: 0.15em;
@@ -627,7 +627,7 @@ text-transform: uppercase;
 ================================ */
 
 .reservation {
-background: var(–bg);
+background: var(–-bg);
 }
 
 .reservation-grid {
@@ -637,14 +637,14 @@ gap: 100px;
 }
 
 .reservation-content > p:not(.eyebrow) {
-color: var(–muted);
+color: var(–-muted);
 max-width: 450px;
 margin-top: 25px;
 }
 
 .opening-hours {
 margin-top: 45px;
-border-top: 1px solid var(–border);
+border-top: 1px solid var(–-border);
 padding-top: 25px;
 }
 
@@ -657,7 +657,7 @@ display: flex;
 justify-content: space-between;
 gap: 20px;
 padding: 12px 0;
-border-bottom: 1px solid var(–border);
+border-bottom: 1px solid var(–-border);
 
 color: var(--muted);
 font-size: 0.75rem;
@@ -670,7 +670,7 @@ color: var(–cream);
 
 .reservation-form {
 padding: 45px;
-background: var(–bg-soft);
+background: var(–-bg-soft);
 border: 1px solid var(–border);
 }
 
@@ -688,7 +688,7 @@ margin-bottom: 25px;
 
 .form-group label {
 margin-bottom: 9px;
-color: var(–muted);
+color: var(–-muted);
 font-size: 0.68rem;
 letter-spacing: 0.12em;
 text-transform: uppercase;
@@ -699,8 +699,8 @@ text-transform: uppercase;
 .form-group textarea {
 width: 100%;
 background: transparent;
-border: 1px solid var(–border);
-color: var(–cream);
+border: 1px solid var(–-border);
+color: var(–-cream);
 padding: 14px;
 outline: none;
 transition: border-color 0.3s ease;
@@ -709,7 +709,7 @@ transition: border-color 0.3s ease;
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-border-color: var(–gold);
+border-color: var(–-gold);
 }
 
 .form-group textarea {
@@ -717,7 +717,7 @@ resize: vertical;
 }
 
 .form-group select option {
-background: var(–bg-soft);
+background: var(–-bg-soft);
 }
 
 .reservation-form .btn {
@@ -725,7 +725,7 @@ width: 100%;
 }
 
 .form-message {
-color: var(–gold);
+color: var(–-gold);
 font-size: 0.75rem;
 text-align: center;
 margin-top: 15px;
@@ -736,17 +736,17 @@ margin-top: 15px;
 ================================ */
 
 .contact {
-background: var(–gold);
-color: var(–bg);
+background: var(–-gold);
+color: var(–-bg);
 text-align: center;
 }
 
 .contact .eyebrow {
-color: var(–bg);
+color: var(–-bg);
 }
 
 .contact h2 em {
-color: var(–bg);
+color: var(–-bg);
 }
 
 .contact-details {
@@ -765,7 +765,7 @@ margin-bottom: 10px;
 }
 
 .contact-details p {
-font-family: var(–heading-font);
+font-family: var(–-heading-font);
 font-size: 1.35rem;
 }
 
@@ -786,7 +786,7 @@ gap: 30px;
 }
 
 .footer p {
-color: var(–muted);
+color: var(–-muted);
 font-size: 0.7rem;
 }
 
@@ -796,13 +796,13 @@ gap: 20px;
 }
 
 .social-links a {
-color: var(–muted);
+color: var(–-muted);
 font-size: 0.7rem;
 transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-color: var(–gold);
+color: var(–-gold);
 }
 
 /* ================================
@@ -810,7 +810,7 @@ color: var(–gold);
 ================================ */
 
 :focus-visible {
-outline: 2px solid var(–gold);
+outline: 2px solid var(–-gold);
 outline-offset: 4px;
 }
 
@@ -1057,7 +1057,7 @@ backdrop-filter 0.3s ease;
 position: fixed;
 background: rgba(17, 16, 14, 0.88);
 backdrop-filter: blur(14px);
-border-bottom: 1px solid var(–border);
+border-bottom: 1px solid var(–-border);
 }
 
 .header.scrolled .nav {
