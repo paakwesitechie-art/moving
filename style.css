@@ -1541,3 +1541,51 @@ img {
         scroll-behavior: auto !important;
     }
 }
+/* =========================================================
+   FINAL ABOUT IMAGE FIX
+   ========================================================= */
+
+.about-images {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 24px !important;
+    min-height: 0 !important;
+}
+
+.about-image-main,
+.about-image-small {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: 420px !important;
+    margin: 0 !important;
+    border: 0 !important;
+    display: block !important;
+    transform: none !important;
+}
+
+.about-image-main img,
+.about-image-small img {
+    width: 100% !important;
+    height: 100% !important;
+    display: block !important;
+    object-fit: cover !important;
+}
+
+@media (max-width: 600px) {
+    .about-images {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+
+    .about-image-main,
+    .about-image-small {
+        width: 100% !important;
+        height: 300px !important;
+        margin: 0 !important;
+        position: relative !important;
+        inset: auto !important;
+    }
+}
